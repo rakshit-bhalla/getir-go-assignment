@@ -9,11 +9,12 @@
 ## Description
 
 - REST API with MVC standards using [Go](https://go.dev/) language.
-- Documentation has been implemented with [Swagger Open Api](https://github.com/swaggo/swag).
+- Documentation has been implemented with [Swagger Open Api](https://swagger.io/specification/).
 - [Mongo database](https://www.mongodb.com/) (No SQL) has been used.
 - Map for In-memory has been used.
 
 ## To Do's
+- Add Documentation
 - Add health checks
 - Improve logging and setup log file generation
 - Add more testcases testing
