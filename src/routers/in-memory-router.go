@@ -29,6 +29,9 @@ func NewInMemoryRouter(
 // ServeHTTP calls controller method with respect to HTTP method and HTTP URL
 func (imr *inMemoryRouter) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("content-type", "application/json")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
+	w.Header().Set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Authorization")
 	switch {
 	case r.Method == http.MethodPost && r.URL.Path == utils.IN_MEMORY_BASE_URL:
 		imr.inMemoryController.Write(w, r)
