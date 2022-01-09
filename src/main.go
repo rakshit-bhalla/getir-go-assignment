@@ -30,5 +30,5 @@ func main() {
 	mux.Handle(utils.RECORDS_BASE_URL, recordsRouter)
 	mux.Handle(utils.RECORDS_BASE_URL+"/", recordsRouter)
 
-	http.ListenAndServe(configs.APIHost, mux)
+	http.ListenAndServe("localhost:"+configs.PORT, mux)
 }
