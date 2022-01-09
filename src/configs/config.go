@@ -13,7 +13,7 @@ var DBName string
 
 func init() {
 	DGN = "local"
-	PORT = "80"
+	PORT = "8080"
 	MongoURI = "mongodb+srv://challengeUser:WUMglwNBaydH8Yvu@challenge-xzwqd.mongodb.net/getir-case-study?retryWrites=true"
 	DBName = "getir-case-study"
 	env := os.Getenv("DEPLOYMENT_GROUP_NAME")
